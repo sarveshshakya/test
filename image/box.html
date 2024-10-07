@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Shadow And Opacity</title>
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-end;
+    height: 100vh;
+  }
+
+  .shadow {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, green, yellow);
+    box-shadow: 20px 0px 0px 70px red;
+    /* this property is used to aplly shadow syntax :- box-shadow: h-offset y-offset blur spread color*/
+  }
+
+  .opacity {
+    width: 360px;
+    height: 360px;
+    background: linear-gradient(to right, pink, red);
+    opacity:2; 
+    /* opacity is used for increasing or decreasing tranparency level of a element*/
+  }
+</style>
+
+<body>
+  <div class="shadow"> BOX SHADOW</div>
+
+  <div class="opacity">OPACITY</div>
+</body>
+
+</html>

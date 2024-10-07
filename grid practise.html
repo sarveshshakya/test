@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid practise</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: (1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "one one three two"
+                "one one three two"
+                "four four three two"
+                "four four three two";
+            height: 100vh;
+            width: 100%;
+            column-gap: 20px;
+            row-gap: 20px;
+            text-align: center;
+            color: aliceblue;
+
+        }
+
+        .item1 {
+            grid-area: one;
+            background-color: brown;
+        }
+
+        .item2 {
+            grid-area: two;
+            background-color: black;
+
+        }
+
+        .item3 {
+            grid-area: three;
+            background-color: blue;
+        }
+
+        .item4 {
+            grid-area: four;
+            background-color: red;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid display</h1>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 5</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "side side side1"
+                "side side side2"
+                "side3 side4 side5";
+            row-gap: 10px;
+            column-gap: 10px;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+           
+
+        }
+
+        .side {
+            background-color: blueviolet;
+            grid-area: side;
+        }
+
+        .side1 {
+            background-color: blueviolet;
+            grid-area: side1;
+        }
+
+        .side2 {
+            background-color: rgb(37, 28, 46);
+            grid-area: side2;
+        }
+
+        .side3 {
+            background-color: rgb(47, 163, 43);
+            grid-area: side3;
+        }
+
+        .side4 {
+            background-color: rgb(73, 12, 131);
+            grid-area: side4;
+        }
+
+        .side5 {
+            background-color: rgb(31, 150, 124);
+            grid-area: side5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side">perfect</div>
+        <div class="side1">perfect</div>
+        <div class="side2">perfect</div>
+        <div class="side3">perfect</div>
+        <div class="side4">perfect</div>
+        <div class="side5">perfect</div>
+    </div>
+</body>
+
+</html>

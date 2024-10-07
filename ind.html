@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 CSS</title>
+    <style>
+        div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /*The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.
+        Both of the following properties are required for text-overflow:
+        white-space: nowrap;
+        overflow: hidden;*/
+            max-width: 1000px;
+            font-size: 50px;
+            background-color: orange;
+        }
+
+
+        a {
+            font-size: 50px;
+            text-decoration: underline dashed black 5px;
+            /*text-decoration: text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness|initial|inherit;*/
+
+            text-underline-offset: 20px;
+            /* The text-underline-offset property specifies the offset distance of underline text decorations from bottom of text.*/
+            background-color: red;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 8px #ff0000;
+            /* // The text-shadow property adds shadow to text// Syntax :-( text-shadow: h-shadow v-shadow blur-radius color)*/
+            /* text overflow */
+            background-color: yellow;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Text Overflow & Text Decoration & Text Shadow</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at rem iste.
+        Debitis sequi dolore ea culpa, magni eum ducimus perspiciatis delectus
+        architecto officia quidem pariatur impedit molestiae repellendus beatae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis
+        est unde fugit. Quam, ex magnam aliquid voluptate voluptatum, commodi
+        voluptas explicabo magni tempora voluptatibus dignissimos reiciendis sed
+        voluptatem doloribus?
+    </div>
+    <a href="">I AM LINK</a>
+    <h1>I AM SHADOW</h1>
+</body>
+
+</html>
+
+<!-- transform: rotate(
+    360deg
+  ); /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.*/ -->
+
+<!-- pointer-events: auto; /* The pointer-events property defines whether or not an element reacts to pointer events.*/ -->

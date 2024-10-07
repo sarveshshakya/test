@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS calc() Example (Css Functions)</title>
+  <style>
+    /* The container takes 100% of the browser's width */
+    .container {
+      width: 100%; 
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    /* The box width is calculated to take 50% of the container width minus 30px */
+    .box {
+      width: calc(50% - 30px); 
+      background-color: lightblue;
+      padding: 20px;
+      margin: 0 auto; /* Centers the box inside the container */
+    }
+
+    /* Sets a minimum height for the box */
+    .box p {
+      min-height: calc(100px + 10%); /* Adds 10% of the viewport height to 100px */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .filter-example {
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      line-height: 200px;
+      color: #fff;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* No filter applied */
+    .none {
+      background-color: #3498db;
+    }
+
+    /* Gaussian blur applied */
+    .blur {
+      background-color: #e74c3c;
+      filter: blur(10px); /* Applies a 10px Gaussian blur */
+    }
+
+    /* Drop shadow applied */
+    .drop-shadow {
+      background-color: #2ecc71;
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); 
+      /* Syntax : filter: drop-shadow(h-shadow v-shadow blur spread color);  */
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+<h1>Css Function & Blur-Filter & Drop-Shadow </h1>
+  <div class="container">
+    <!-- This is the box that will adjust its size based on the calc() function -->
+    <div class="box">
+      <p>This box is using the CSS calc() function to adjust its width and height.</p>
+    </div>
+  </div>
+
+
+  <div class="filter-example none">
+    No Filter
+  </div>
+
+  <div class="filter-example blur">
+    Blur Filter
+  </div>
+
+  <div class="filter-example drop-shadow">
+    Drop Shadow
+  </div>
+
+</body>
+</html>

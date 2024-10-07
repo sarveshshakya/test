@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Properties: z-index, clip-path, object-fit</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+      /* z-index example */
+      .container {
+        /* Setting up a relative positioning context for the contained elements */
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        background-color: lightgray; /* Background color to make the example clearer */
+      }
+
+      .box1,
+      .box2 {
+        /* Both boxes will be absolutely positioned inside the container */
+        position: absolute;
+        width: 150px;
+        height: 150px;
+      }
+
+      .box1 {
+        background-color: coral; /* Coral color for Box 1 */
+        top: 50px; /* Positioning the box 50px from the top */
+        left: 50px; /* Positioning the box 50px from the left */
+        z-index: 2; /* Higher z-index means this box will appear on top */
+      }
+
+      .box2 {
+        background-color: skyblue; /* Skyblue color for Box 2 */
+        top: 100px; /* Positioning the box 100px from the top */
+        left: 100px; /* Positioning the box 100px from the left */
+        z-index: 1; /* Lower z-index means this box will appear below Box 1 */
+      }
+
+
+      /* object-fit example */
+      .fit-example {
+        /* Container for the object-fit example */
+        margin: 20px;
+        width: 400px;
+        height: 200px;
+        background-color: #eee; /* Light gray background for better visibility */
+      }
+
+      .fit-example img {
+        /* Image inside the fit-example container */
+        width: 100%; /* Make the image fill the container width */
+        height: 100%; /* Make the image fill the container height */
+        object-fit: cover; /* (fill , cover , contain , scale-down , none) Maintain aspect ratio while covering the container */
+      }
+
+      .objectdata{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+
+      .objectdata b{
+        font-size: 30px;
+      }
+      h1{
+        text-align: center;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Properties: z-index, clip-path, object-fit</h1>
+
+    <!-- z-index Example -->
+    <h2>z-index Example</h2>
+    <p>
+      The <code>z-index</code> specifies the stack order of an element. Elements
+      with a higher <code>z-index</code> will appear in front of elements with a
+      lower value.
+    </p>
+    <div class="container">
+      <!-- Box 1 has a higher z-index, so it appears in front of Box 2 -->
+      <div class="box1">Box 1 (z-index: 2)</div>
+      <!-- Box 2 has a lower z-index, so it appears behind Box 1 -->
+      <div class="box2">Box 2 (z-index: 1)</div>
+    </div>
+
+    <!-- object-fit Example -->
+    <h2>object-fit Example</h2>
+    <p>
+      The <code>object-fit</code> property specifies how an image or video
+      should resize to fit its container. Here,
+      <code>object-fit: cover</code> is used to maintain the aspect ratio and
+      cover the container.
+    </p>
+    <div class="fit-example">
+      <img src="https://via.placeholder.com/300x200" alt="Example Image" />
+      <!-- The image covers the container, maintaining its aspect ratio -->
+    </div>
+    <div class="objectdata">
+
+        <p><b>fill - </b>This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+        </p>
+        <p><b>contain -</b> The image keeps its aspect ratio, but is resized to fit within the given dimension</p>
+        <p><b>cover -</b> The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit</p>
+        <p><b>none -</b> The image is not resized</p>
+        <p><b>scale-down -</b> the image is scaled down to the smallest version of none or contain</p>
+    </div>
+  </body>
+</html>

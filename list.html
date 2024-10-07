@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            background-color: rgb(82, 139, 189);
+            color: azure;
+            display: flex;
+
+        }
+
+        #img :hover {
+            transition: all 1s ease;
+            border-radius: 30px;
+            margin-top: 20px;
+
+        }
+
+        header {
+            background-color: rgb(56, 48, 65);
+            color: rgb(248, 236, 236);
+        }
+
+        li {
+            text-decoration: none;
+            display: inline;
+            margin-left: 15px;
+        }
+
+        li:hover {
+            background-color: rgb(189, 42, 42);
+            color: rgb(16, 36, 36);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="header">
+            <li>home </li>
+            <li>about </li>
+            <li>contant us </li>
+
+        </ul>
+    </header>
+    <div class="div">
+
+        <div class="a">
+            <ul style="list-style-type:roman;">
+                <li>apple</li>
+                <ul style="list-style-type: square;">
+                    <li>color read</li>
+                    <li>seation winter</li>
+                    <li>prizes 50 kg</li>
+                </ul>
+            </ul>
+            <ol>
+                <li>mango</li>
+                <ol type="i">
+                    <li>seation summer</li>
+                    <li>color yollow</li>
+                    <li>prize 40 kg</li>
+                </ol>
+            </ol>
+            <details>
+                <summary>my name is shakya</summary>
+                my age 22 year old<br>
+                I from near dps school shree ganga nagar road abohar dist...<br>
+                fazilka,firozpur.<br>
+
+            </details>
+            <dl>
+                <dt>sonu kumar shkaya roll no 22 </dt>
+                <dd>vinod kumar shakya</dd>
+
+            </dl>
+        </div>
+        <div id="img">
+            <img src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D"
+                alt="">
+
+        </div>
+    </div>
+    <fieldset>
+        <legend>
+            <br><br>
+            <h5 style="text-align: center;">
+                student ragistration form
+            </h5>
+            <div>
+                <br>
+                name : <input type="text">
+                <br><br>
+                fathers name : <input type="text">
+
+            </div>
+            <br>
+            <div style="display: flex;">
+                <div>
+                    gender : male <input type="radio" name="radio">
+                </div>
+                <div>
+                    female <input type="radio" name="radio">
+                </div>
+                <div>
+                    other <input type="radio" name="radio">
+
+                </div>
+                <div>
+                    mother's name : <input type="text">
+                </div>
+
+            </div>
+            <div>
+
+                <select name="drop.down">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                </select>
+            </div>
+
+        </legend>
+        <br>
+    </fieldset>
+
+</body>
+
+</html>

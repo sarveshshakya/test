@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(to right, green, yellow);
+            border: 10px solid black;
+            border-width: 10px;
+            /* border-style: dashed; */
+            border-color: black;
+            padding: 100px;
+            box-sizing: border-box;
+
+        }
+
+        .box2 {
+            width: 100%;
+            background: linear-gradient(to right, red, yellow);
+            height: 300px;
+            padding:100px;
+            box-sizing: border-box;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Box model</h2>
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nesciunt dolor consequatur ullam aliquid
+        voluptate expedita quasi, vitae numquam velit maiores ipsa cupiditate inventore voluptatibus architecto ratione
+        modi vero! Magni.
+
+
+    </div>
+</body>
+
+</html>
